@@ -18,13 +18,14 @@
             height:16.667dvh;
             top:0;
             left:0;
-            font-size: 3.5dvw;
+            font-size:4cqw;
             color:white;
             font-family:Arial;
             align-items:center;
             display:flex;
             text-align:center;
             justify-content:center;
+            container-type:inline-size;
         }
         button{
             all:unset;
@@ -44,14 +45,16 @@
             text-align:center;
             align-items:center;
             justify-content:center;
+            container-type:inline-size;
         }
         .button:hover{
             background-color:lightgrey;
         }
         .buttonIcon{
+            margin-top:50cqw;
             color:white;
             font-style:bold;
-            font-size:3.5vw;
+            font-size:60cqw;
             font-family:Impact
         }
         .mainText{
@@ -116,7 +119,7 @@
             z-index:1000;
             transform:translateX(-100%);
             transition:transform 0.5s ease-in-out;
-            box-sizing:border-box;
+            container-type:inline-size;
         }
         #sidebar.active{
             transform:translateX(0%);
@@ -138,7 +141,7 @@
             height:16.6667%;
             box-sizing:border-box;
             padding:0;
-            font-size:3.5dvw;
+            font-size:4cqw;
             font-family:Impact;
             border-top:1vh solid white;
             text-align:center;
@@ -209,7 +212,7 @@
             no a tag. Same goes for the next and previous buttons, they just need a link added. The sidebar is mostly stable with zooming, 
             but it moves around the screen. I honestly have absolutely no idea how to fix this and will need your or my classmates' help.
             Lastly, here is a test image. Text appropriately moves to the side without being vertically displaced, with appropriate alt 
-            text for the image. <img src="IMG_8117.jpg" alt="my cat, wilton" width="300" height="400"> 
+            text for the image. <img src="IMG_8117.jpg" alt="my cat, wilton" width="300" height="400" style="margin-left:1dvw"> 
         </p>
     </main>
     <footer class="footer">
