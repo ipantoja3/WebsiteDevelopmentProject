@@ -8,24 +8,36 @@
         body{
             margin:0;
             padding:0;
+            background-color:#e8dcc4;
         }
         .header{
             padding:0;
             margin:0;
             position:fixed;
-            background-color:black;
+            background-color:#123f36;
             width:100%;
             height:16.667dvh;
             top:0;
             left:0;
-            font-size:6cqh;
-            color:white;
-            font-family:Arial;
             align-items:center;
             display:flex;
             text-align:center;
             justify-content:center;
             container-type:size;
+            border-bottom:1vh solid #2a6b5c;
+        }
+        .headerTitle{
+            justify-content:center;
+            align-items:center;
+            height:16.667dvh;
+            padding:0;
+            display:flex;
+            top:0;
+            margin: 0 0 0 16.667dvh;
+            width:calc(100%-16.667dvh);
+            font-size:14vh;
+            color:#e8dcc4;
+            font-family:Arial;
         }
         button{
             all:unset;
@@ -33,14 +45,14 @@
         .button{
             height:16.667dvh;
             width:16.667dvh;
-            background-color:black;
+            background-color:#123f36;
             margin:0;
             padding:0;
             display:flex;
             position:fixed;
             top:0;
             left:0;
-            border-right:1dvh solid white;
+            border-right:1dvh solid #2a6b5c;
             z-index:1001;
             text-align:center;
             align-items:center;
@@ -48,29 +60,33 @@
             container-type:size;
         }
         .button:hover{
-            background-color:grey;
+            background-color:#2a6b5c;
         }
         .buttonIcon{
             margin-top:50cqw;
-            color:white;
+            color:#e8dcc4;
             font-style:bold;
             font-size:60cqh;
-            font-family:Impact
+            font-family:Impact;
         }
         .mainText{
             margin: 20dvh 6dvh 0px 6dvh;
             text-align:left;
             align-items:center;
-            color:black;
-            font-size:1.5rem;
             font-family:Arial;
             line-height:1.5;
+            color:#123f36;
+            font-size:1.5rem;
+        }
+        .mainText h1{
+            color:#2a6b5c;
+            font-size:2.25rem;
         }
         .footer{
             padding:0;
             margin:0;
             display:flex;
-            background-color:black;
+            background-color:#123f36;
             width:100%;
             height:14dvh;
             bottom:0;
@@ -80,10 +96,10 @@
             position:relative;
             overflow:hidden;
             container-type:size;
+            border-top:1vh solid #2a6b5c;
         }
         .previous,.next,.dots{
-            background-color:black;
-            color:white;
+            color:#e8dcc4;
             font-style:bold;
             font-size:60cqh;
             height:12dvh;
@@ -93,7 +109,6 @@
             align-items:center;
             justify-content:center;
             display:flex;
-            
         }
         .previous,.next{
             font-family:impact;
@@ -104,14 +119,11 @@
             padding-right:5dvw;
         }
         .previous:hover,.next:hover{
-            background-color:grey;
-        }
-        mainText h1{
-            font-size:2.25rem;
+            background-color:#2a6b5c;
         }
         #sidebar{
             width:100dvw;
-            background-color:black;
+            background-color:#123f36;
             height:100dvh;
             top:0;
             left:0;
@@ -135,8 +147,8 @@
             flex-direction:column;
         }
         aside ul li{
-            background-color:black;
-            color:white;
+            background-color:#123f36;
+            color:#e8dcc4;
             display:flex;
             width:100dvw;
             margin:0;
@@ -145,14 +157,14 @@
             padding:0;
             font-size:10cqh;
             font-family:Impact;
-            border-top:1vh solid white;
+            border-top:1vh solid #2a6b5c;
             text-align:center;
             left:0;
             justify-content:center;
             align-items:center;
         }
         aside ul li:hover{
-            background-color:grey;
+            background-color:#2a6b5c;
         }
         p{
             display:flex;
@@ -187,7 +199,9 @@
         });
     </script>
     <header class="header" aria-label="title">
-        <h1 style="margin-left:8.335dvw;">Title</h1>
+        <title class="headerTitle">
+            Title
+        </title>
     </header>
     <main class="mainText" role="main">
         <h1 aria-label="paragraph 1">Paragraph 1</h1>
