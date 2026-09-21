@@ -98,25 +98,32 @@
             container-type:size;
             border-top:1vh solid #2a6b5c;
         }
-        .previous,.next,.dots{
+        .previous,.next,.pageNumContainer{
             color:#e8dcc4;
-            font-style:bold;
             font-size:8cqw;
-            height:12dvh;
+            height:14dvh;
             margin-top:0;
             margin-bottom:0;
-            padding:0;
+            padding:0 2dvw 0 2dvw;
             align-items:center;
             justify-content:center;
             display:flex;
         }
         .previous,.next{
-            font-family:impact;
-        }
-        .dots{
             font-family:Arial;
-            padding-left:5dvw;
-            padding-right:5dvw;
+        }
+        .pageNumContainer{
+            font-family:Arial;
+            padding-left:3dvw;
+            padding-right:3dvw;
+            font-size:5cqw;
+        }
+        .pageNum{
+            margin-left:1dvw;
+            margin-right:1dvw;
+        }
+        .activePageNum{
+            color:#8AB8AD;
         }
         .previous:hover,.next:hover{
             background-color:#2a6b5c;
@@ -166,9 +173,6 @@
         aside ul li:hover{
             background-color:#2a6b5c;
         }
-        p{
-            display:flex;
-        }
         img{
             max-width:100%;
             height:auto;
@@ -208,8 +212,8 @@
         <p>
             Hello Emmanuel, I wasn't entirely sure what exactly was expected from this submission, so I've submitted a functioning prototype. 
             All font sizes are set to rem units, so they will scale appropriately for users who may have blurry vision and need to zoom in for larger text. 
-            The title text is a set size though as if it wasn't it would exceed the size of the bar. The tags used are semantically correct, with no div 
-            tags in the code whatsoever. Major buttons have aria roles/names. The title bar uses the header tag, this body text uses the main 
+            The title text is a set size though as if it wasn't it would exceed the size of the bar. The tags used are semantically correct, with only one div 
+            tag in the code, for the page numbers in the footer. Major buttons have aria roles/names. The title bar uses the header tag, this body text uses the main 
             tag, the button uses the button tag, and the navigation arrows at the bottom use the footer tag. The sidebar uses the aside and nav semantic tags.
             The paragraphs also have a line height set to 1.5 (WCAG recommended minimum) to ensure proper spacing.
         </p>
@@ -223,17 +227,25 @@
             page the user is currently on. For example, if the user were on page 4, the fourth dot would be filled. 
         </p>
         <h1 aria-label="paragraph 3">Paragraph 3</h1>
-        <p>
+        <p style="float:left;">
+            <img src="IMG_8117.jpg" alt="my cat, wilton" width="300" height="400" style="margin-left:1dvw; float:right;">
             The sidebar functions pretty much as intended, it just doesn't have any other pages to redirect to, so they're plain list items with
-            no a tag. Same goes for the next and previous buttons, they just need a link added. The sidebar is mostly stable with zooming, 
-            but it moves around the screen. I honestly have absolutely no idea how to fix this and will need your or my classmates' help.
+            no a tag. Same goes for the next and previous buttons, they just need a link added. I've figured out how to fix my previous 
+            issues with how the sidebar interacted when zooming in and/or out.
             Lastly, here is a test image. Text appropriately moves to the side without being vertically displaced, with appropriate alt 
-            text for the image. <img src="IMG_8117.jpg" alt="my cat, wilton" width="300" height="400" style="margin-left:1dvw"> 
+            text for the image.  
         </p>
     </main>
     <footer class="footer">
         <button class="previous" aria-label="previous page"><<</button>
-        <p class="dots">&middot;   &middot;   &middot;   &middot;   &middot;   &middot;</p>
+        <div class="pageNumContainer">
+            <span class="activePageNum">1</span>
+            <span class="pageNum">2</span>
+            <span class="pageNum">3</span>
+            <span class="pageNum">4</span>
+            <span class="pageNum">5</span>
+            <span class="pageNum">6</span>
+        </div>
         <button class="next" aria-label="next page">>></button>
     </footer>
 </body>
