@@ -107,7 +107,7 @@ main h2{
 }
 .previous,.next,.pageNumContainer{
     color:var(--bg);
-    font-size:8cqw;
+    font-size:80cqh;
     height:14dvh;
     margin-top:0;
     margin-bottom:0;
@@ -127,7 +127,7 @@ button a{
     font-family:Arial;
     padding-left:3dvw;
     padding-right:3dvw;
-    font-size:5cqw;
+    font-size:80cqh;
 }
 .pageNum{
     margin-left:1dvw;
