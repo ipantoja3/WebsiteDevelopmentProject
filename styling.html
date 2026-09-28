@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling</title>
+    <link href="webdevprojectstyles.css" rel="stylesheet">
+    <script src="webdevprojectscript.js" defer></script>
+</head>
+<body>
+    <button class="button" aria-label="toggle sidebar" id="toggleSidebar">
+        <p class="buttonIcon" aria-label="toggle sidebar">☰</p>
+    </button>
+    <aside id="sidebar">
+        <ul>
+            <li style="border-top:none;"><a href=index.html aria-label="home">Home</a></li>
+            <li><a href="styling.html" aria-label="styling">Styling</a></li>
+            <li><a href="ui.html" aria-label="ui elements">UI Elements</a></li>
+            <li><a href="WCAG.html" aria-label="wcag">WCAG</a></li>
+            <li><a href="mobile.html" aria-label="mobile-first">Mobile-First</a></li>
+            <li><a href="conclusion.html" aria-label="conclusion">Conclusion</a></li>
+        </ul>
+    </aside>
+    <header class="header" aria-label="home">
+        <title class="headerTitle">
+            Styling
+        </title>
+    </header>
+    <main>
+        <h1 aria-label="styling">Styling</h1>
+        <h2 aria-label="paragraph 1 colors">Colors</h2>
+        <p>
+            I chose a simple color scheme from <a href="colorhunt.co">colorhunt.co.</a> This is a free-to-use website featuring hundreds 
+            of free use color palettes for websites. I made some minor modifications, such as removing a gold color that didn't fit 
+            particularly well and adding a lighter "selected" color for the numbers below and screen reader selection. These colors are stored 
+            in CSS variables to avoid having to type the hex code every time. The background color, #e8dcc4, is saved as "bg"; the selected color, 
+            #8AB8AD, is saved as "selected"; the header color, #123f36, is saved as "dark"; and the lighter border color of the header, #2a6b5c, 
+            is saved as "light." These colors are contrast-compliant with WCAG, something I'll elaborate on in the WCAG page.  
+        </p>
+        <h2 aria-label="paragraph 2 margins">Margins</h2>
+        <p>
+            I <em>greatly</em> struggled with the margins and padding of CSS. I find their implementation comically unintuitive. 
+            Firstly, browsers will apply padding and margins to all websites by default that must be manually removed. Secondly, many elements 
+            feature their own default padding that must also be indepently removed and ignore the margin/padding settings of their 
+            parent containers. Tables, lists, and buttons all do this, requiring more work and troubleshooting from the user. Choosing specific 
+            margin/padding sizes also gave me trouble for quite awhile. Margins provide an aesthetically pleasing gap between elements, stopping 
+            the text you see from touching the very edge of your screen or the very bottom/top of the header/footer. 
+        </p>
+        <h2 aria-label="paragraph 3 sizing">Sizing</h2>
+        <p>
+            Originally, at the start of my class, I used px sizing for everything without thinking about it. Then, I opened my first real attempt 
+            at a website on my desktop at home and it was completely broken. Why? My laptop screen, that I built the website on, is 1366x768 pixels. 
+            My desktop is 1920x1080 pixels. A 5 pixel element will take up a much smaller portion of the screen on my desktop than on my laptop, 
+            drastically altering the positioning and relative size of every single element on my desktop. To combat this, I didn't size or position 
+            any major elements with px, instead opting for vh and vw. Vh and vw represent a percentage of the screen size, meaning that instead of 
+            having to find a pixel amount for 10% of my screen that wouldn't work on other devices, I can use "10vh" and have it adapt automatically 
+            to be 10% of the user's view height. 
+        </p>
+    </main role="main">
+    <footer class="footer">
+        <button class="previous" aria-label="previous page"><<</button>
+        <div class="pageNumContainer">
+            <span class="pageNum">1</span>
+            <span class="activePageNum">2</span>
+            <span class="pageNum">3</span>
+            <span class="pageNum">4</span>
+            <span class="pageNum">5</span>
+            <span class="pageNum">6</span>
+        </div>
+        <button class="next" aria-label="next page">>></button>
+    </footer>
+</body>
+</html>

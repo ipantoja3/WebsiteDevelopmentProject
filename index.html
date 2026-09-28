@@ -3,182 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Development Project - Israel Pantoja</title>
-    <style>
-        body{
-            margin:0;
-            padding:0;
-            background-color:#e8dcc4;
-        }
-        .header{
-            padding:0;
-            margin:0;
-            position:fixed;
-            background-color:#123f36;
-            width:100%;
-            height:16.667dvh;
-            top:0;
-            left:0;
-            align-items:center;
-            display:flex;
-            text-align:center;
-            justify-content:center;
-            container-type:size;
-            border-bottom:1vh solid #2a6b5c;
-        }
-        .headerTitle{
-            justify-content:center;
-            align-items:center;
-            height:16.667dvh;
-            padding:0;
-            display:flex;
-            top:0;
-            margin: 0 0 0 16.667dvh;
-            width:calc(100%-16.667dvh);
-            font-size:14vh;
-            color:#e8dcc4;
-            font-family:Arial;
-        }
-        button{
-            all:unset;
-        }
-        .button{
-            height:16.667dvh;
-            width:16.667dvh;
-            background-color:#123f36;
-            margin:0;
-            padding:0;
-            display:flex;
-            position:fixed;
-            top:0;
-            left:0;
-            border-right:1dvh solid #2a6b5c;
-            z-index:1001;
-            text-align:center;
-            align-items:center;
-            justify-content:center;
-            container-type:size;
-        }
-        .button:hover{
-            background-color:#2a6b5c;
-        }
-        .buttonIcon{
-            margin-top:50cqw;
-            color:#e8dcc4;
-            font-style:bold;
-            font-size:60cqh;
-            font-family:Impact;
-        }
-        .mainText{
-            margin: 20dvh 6dvh 0px 6dvh;
-            text-align:left;
-            align-items:center;
-            font-family:Arial;
-            line-height:1.5;
-            color:#123f36;
-            font-size:1.5rem;
-        }
-        .mainText h1{
-            color:#2a6b5c;
-            font-size:2.25rem;
-        }
-        .footer{
-            padding:0;
-            margin:0;
-            display:flex;
-            background-color:#123f36;
-            width:100%;
-            height:14dvh;
-            bottom:0;
-            left:0;
-            align-items:center;
-            justify-content:center;
-            position:relative;
-            overflow:hidden;
-            container-type:size;
-            border-top:1vh solid #2a6b5c;
-        }
-        .previous,.next,.pageNumContainer{
-            color:#e8dcc4;
-            font-size:8cqw;
-            height:14dvh;
-            margin-top:0;
-            margin-bottom:0;
-            padding:0 2dvw 0 2dvw;
-            align-items:center;
-            justify-content:center;
-            display:flex;
-        }
-        .previous,.next{
-            font-family:Arial;
-        }
-        .pageNumContainer{
-            font-family:Arial;
-            padding-left:3dvw;
-            padding-right:3dvw;
-            font-size:5cqw;
-        }
-        .pageNum{
-            margin-left:1dvw;
-            margin-right:1dvw;
-        }
-        .activePageNum{
-            color:#8AB8AD;
-        }
-        .previous:hover,.next:hover{
-            background-color:#2a6b5c;
-        }
-        #sidebar{
-            width:100dvw;
-            background-color:#123f36;
-            height:100dvh;
-            top:0;
-            left:0;
-            padding:0;
-            margin:0;
-            position:fixed;
-            z-index:1000;
-            transform:translateX(-100%);
-            transition:transform 0.5s ease-in-out;
-            container-type:size;
-        }
-        #sidebar.active{
-            transform:translateX(0%);
-        }
-        aside ul{
-            list-style-type:none;
-            padding:0;
-            margin:0;
-            height:100%;
-            display:flex;
-            flex-direction:column;
-        }
-        aside ul li{
-            background-color:#123f36;
-            color:#e8dcc4;
-            display:flex;
-            width:100dvw;
-            margin:0;
-            height:16.6667%;
-            box-sizing:border-box;
-            padding:0;
-            font-size:10cqh;
-            font-family:Impact;
-            border-top:1vh solid #2a6b5c;
-            text-align:center;
-            left:0;
-            justify-content:center;
-            align-items:center;
-        }
-        aside ul li:hover{
-            background-color:#2a6b5c;
-        }
-        img{
-            max-width:100%;
-            height:auto;
-            align-self:center;
-        }
-    </style>
+    <title>Home</title>
+    <link href="webdevprojectstyles.css" rel="stylesheet">
+    <script src="webdevprojectscript.js" defer></script>
 </head>
 <body>
     <button class="button" aria-label="toggle sidebar" id="toggleSidebar">
@@ -186,54 +13,47 @@
     </button>
     <aside id="sidebar">
         <ul>
-            <li style="border-top:none;">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
+            <li style="border-top:none;"><a href=index.html>Home</a></li>
+            <li><a href="styling.html">Styling</a></li>
+            <li><a href="ui.html">UI Elements</a></li>
+            <li><a href="WCAG.html">WCAG</a></li>
+            <li><a href="mobile.html">Mobile-First</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
         </ul>
     </aside>
-    <script>
-        const toggleSidebar = document.querySelector('#toggleSidebar');
-        const sidebar = document.querySelector('#sidebar');
-        
-        toggleSidebar.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
-        });
-    </script>
-    <header class="header" aria-label="title">
+    <header class="header" aria-label="home">
         <title class="headerTitle">
-            Title
+            Home
         </title>
     </header>
-    <main class="mainText" role="main">
-        <h1 aria-label="paragraph 1">Paragraph 1</h1>
+    <main role="main">
+        <h1 aria-label="introduction">Introduction</h1>
+        <h2 aria label="paragraph 1 purpose">Purpose</h2>
         <p>
-            Hello Emmanuel, I wasn't entirely sure what exactly was expected from this submission, so I've submitted a functioning prototype. 
-            All font sizes are set to rem units, so they will scale appropriately for users who may have blurry vision and need to zoom in for larger text. 
-            The title text is a set size though as if it wasn't it would exceed the size of the bar. The tags used are semantically correct, with only one div 
-            tag in the code, for the page numbers in the footer. Major buttons have aria roles/names. The title bar uses the header tag, this body text uses the main 
-            tag, the button uses the button tag, and the navigation arrows at the bottom use the footer tag. The sidebar uses the aside and nav semantic tags.
-            The paragraphs also have a line height set to 1.5 (WCAG recommended minimum) to ensure proper spacing.
+            Hello, my name is Israel Pantoja, and this is my website about itself. The purpose of this website is to explain the accessibility and 
+            UI design choices I've made as a result of my learning throughout this class. This website is for the Ivy Tech Community College 
+            SDEV 153-Website Development class. Our final project submission is the creation of a website. The HTML, CSS, and JavaScript can be 
+            downloaded below.
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
         </p>
-        <h1 aria-label="paragraph 2">Paragraph 2</h1>
+        <h2 aria-label="paragraph 2 concept">Concept</h2>
         <p>
-            I have settled on a topic, but I haven't began writing the contents of the website yet. The research required will probably take me 
-            longer than coding the website, so this placeholder text is here for now. I'm not totally sure on a colorscheme, but I will 
-            ensure it meets minimum contrast requirements. The current black and white colorscheme has a 21:1 contrast ratio but I 
-            obviously don't intend to keep it. There's six middot characters in the footer, they're a placeholder for a "progress bar" that 
-            will indicate how many pages in the user is. Each one will be a small hollow circle, and one will be filled to indicate the 
-            page the user is currently on. For example, if the user were on page 4, the fourth dot would be filled. 
+            Despite it's seeming simplicity, this concept took me quite awhile to come up with. I quite enjoyed the code aspect, but was 
+            honestly not looking forward to the extensive research and writing any other topic would require. This topic, being covered in class, 
+            allowed me to skip this stage and focus on the code of the website. The website was essentially code-complete before I'd even 
+            settled on a topic. I believe the topical nature of this website is an effective demonstration that I've mastered the course material.
         </p>
-        <h1 aria-label="paragraph 3">Paragraph 3</h1>
-        <p style="float:left;">
-            <img src="IMG_8117.jpg" alt="my cat, wilton" width="300" height="400" style="margin-left:1dvw; float:right;">
-            The sidebar functions pretty much as intended, it just doesn't have any other pages to redirect to, so they're plain list items with
-            no a tag. Same goes for the next and previous buttons, they just need a link added. I've figured out how to fix my previous 
-            issues with how the sidebar interacted when zooming in and/or out.
-            Lastly, here is a test image. Text appropriately moves to the side without being vertically displaced, with appropriate alt 
-            text for the image.  
+        <h2 aria-label="paragraph 3 my growth">Growth</h2>
+        <p>
+            When I started this class, I had virtually zero knowledge of HTML, CSS, or JavaScript. I've used all 3 in the creation of this website.
+            I'm admittedly not a fan of CSS, but I find HTML and especially JavaScript to be great fun to use. HTML is very straightforward and JavaScript 
+            is so versatile. CSS is necessary, but incredibly confusing with plenty of unclear rules and edge cases. CSS was not designed for 
+            how we use it in the modern day and it shows. Throughout the pages I'll elaborate on the strategies used in my code and what 
+            I've learned over the course of this class.
         </p>
     </main>
     <footer class="footer">
@@ -246,7 +66,7 @@
             <span class="pageNum">5</span>
             <span class="pageNum">6</span>
         </div>
-        <button class="next" aria-label="next page">>></button>
+        <button class="next" aria-label="next page"><a href="styling.html">>></a></button>
     </footer>
 </body>
 </html>
