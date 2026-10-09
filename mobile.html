@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-First</title>
+    <link href="webdevprojectstyles.css" rel="stylesheet">
+    <script src="webdevprojectscript.js" defer></script>
+</head>
+<body>
+    <button class="button" aria-label="toggle sidebar" id="toggleSidebar">
+        <p class="buttonIcon" aria-label="toggle sidebar">☰</p>
+    </button>
+    <aside id="sidebar">
+        <ul>
+            <li style="border-top:none;"><a href=index.html id="first">Home</a></li>
+            <li><a href="styling.html">Styling</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="WCAG.html">WCAG</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </aside>
+    <header class="header" aria-label="mobile">
+        <title class="headerTitle">
+            Mobile
+        </title>
+    </header>
+    <main>
+        <h1 aria-label="Mobile">Mobile<a href="index.html"><image src="logo.png" class="logo"></image></a></h1>
+        <h2 aria-label="paragraph 1 why mobile first">Why Mobile First</h2>
+        <p>
+            Mobile-first design is building and optimizing a site with mobile users at the forefront, and making any edits for desktop second. 
+            This is primarily beneficial because usually, desktop sites won't translate well to mobile, but mobile sites can translate 
+            fairly easily to desktop. Designing around the constraints of mobile ensures a smooth integration to both platforms and removes 
+            the need to entirely redesign the website for mobile users later on in development. It forces the use of relative sizing units, 
+            which is generally good practice regardless. 
+        </p>
+        <h2 aria-label="paragraph 2 measurements">Measurements</h2>
+        <p>
+            Planning ahead for mobile results in the sizing of elements requiring a lot of thought. A large image being 700px wide may be 
+            fine on a desktop, but on many phones, it will take up the entire screen. Using pixel measurements for UI is especially 
+            not recommended, as your website will look wildly different on an even slightly different display. So, sizing everything with 
+            relative units is best practice. Relative units, or in this case, dvw and dvh, will automatically adapt to the users' screen size. 
+            A wide image can now be 70dvw (70% of the dynamic view width) and always take up exactly 70% of the screen's width no matter 
+            what device the user has. Dvw is dynamic view width, with vw, regular view width, also being an option. I opted not to use vw as 
+            dynamic view width not only adapts the size of elements when the page loads, but dyanmically changes them if the size of 
+            the browser window changes with the website still open. Many mobile browsers have collapsing elements, and dvw/dvh adapt to these 
+            flawlessly. 
+        </p>
+        <h2 aria-label="paragraph 3 on your phone">On Your Phone</h2>
+        <p>
+            The website essentially looks and feels the same on mobile, as was my intention. Below is a picture of the website in desktop view, 
+            and a picture of the website in mobile view, for comparison. 
+        </p>
+        <img src="desktopView.png" alt="a desktop view of the website">
+        <img src="mobileView.png" alt="a mobile view of the website">
+    </main>
+    <footer class="footer">
+        <button class="previous" aria-label="previous page"><a href="WCAG.html"><<</a></button>
+        <div class="pageNumContainer">
+            <span class="pageNum">1</span>
+            <span class="pageNum">2</span>
+            <span class="pageNum">3</span>
+            <span class="pageNum">4</span>
+            <span class="activePageNum">5</span>
+            <span class="pageNum">6</span>
+        </div>
+        <button class="next" aria-label="next page"><a href="conclusion.html">>></a></button>
+    </footer>
+</body>
+</html>
