@@ -18,7 +18,7 @@ function mobile(){
         const header = document.querySelector('.headerTitle');
         header.style.fontSize='10dvh';
         const footer = document.querySelector('.pageNumContainer');
-        footer.style.fontSize='30cqh';
+        footer.style.fontSize='5cqh';
     }
 }
 
