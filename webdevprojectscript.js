@@ -19,7 +19,7 @@ function mobile(){
         header.style.fontSize='10dvh';
         const footer = document.querySelectorAll('.previous, .next, .pageNumContainer');
         footer.forEach(element => {
-            element.style.fontSize='50cqh';
+            element.style.fontSize='60cqh';
         })
     }
 }
