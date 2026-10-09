@@ -17,7 +17,7 @@ function mobile(){
         first.style.marginLeft='16.667dvh';
         const header = document.querySelector('.headerTitle');
         header.style.fontSize='10dvh';
-        const footer = document.querySelector('.pageNumContainer');
+        const footer = document.querySelector('.previous, .next, .pageNumContainer');
         footer.style.fontSize='30cqh';
     }
 }
