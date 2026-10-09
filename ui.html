@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Elements</title>
+    <link href="webdevprojectstyles.css" rel="stylesheet">
+    <script src="webdevprojectscript.js" defer></script>
+</head>
+<body>
+    <button class="button" aria-label="toggle sidebar" id="toggleSidebar">
+        <p class="buttonIcon" aria-label="toggle sidebar">☰</p>
+    </button>
+    <aside id="sidebar">
+        <ul>
+            <li style="border-top:none;"><a href=index.html id="first">Home</a></li>
+            <li><a href="styling.html">Styling</a></li>
+            <li><a href="ui.html">UI Elements</a></li>
+            <li><a href="WCAG.html">WCAG</a></li>
+            <li><a href="mobile.html">Mobile-First</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </aside>
+    <header class="header" aria-label="ui elements">
+        <title class="headerTitle">
+            UI Elements
+        </title>
+    </header>
+    <main>
+        <h1 aria-label="ui elements">UI Elements<a href="index.html"><image src="logo.png" class="logo"></image></a></h1>
+        <h2 aria-label="paragraph 1 header">Header</h2>
+        <p>
+            The header is made using the semantic "header" tag with CSS to specify it's appearance. The width is set to 100% to ensure it's 
+            exactly as wide as the user's screen at any screen width, and the height is a very specific 16.667 dvh. This is to make it line up 
+            with the sidebar items' height. Top:0 and left:0 are used to set the position (top left corner of the header is 0 pixels from the 
+            top of the screen and 0 pixels from the left edge of the screen). Position:fixed is sued to ensure it always stays at the top of the 
+            users' screen regardless of where they scroll. Lastly, a small (1dvh) border of a lighter color is placed at the bottom for aesthetics.
+        </p>
+        <h2 aria-label="paragraph 2 footer">Footer</h2>
+        <p>
+            The footer is rather similar to the header, made with the semantic "footer" tag and styled using CSS. The width is also set to 100%, 
+            but the height is slightly less at 14dvh. The footer uses bottom:0 instead of top:0 for positioning, to align it to the bottom of 
+            the body. The footer notably lacks position:sticky, meaning the footer won't appear until you scroll to the bottom of the page. 
+            This also means that in the absence of any text to increase the body height, the footer ends up in the same position as the header. 
+        </p>
+        <h2 aria-label="paragraph 3 sidebar">Sidebar</h2>
+        <p>
+            The sidebar was pretty complicated for me at the time, and was the first use of JavaScript in the site. The button uses a 
+            simple click eventListener to toggle a CSS class named "active" on and off the parent container of the sidebar. Each item in the 
+            sidebar (as well as the header for aesthetic consistency) is set to 16.667 dvh. This is becaus the sidebar consists of 6 items, 
+            and my goal was to have the sidebar match the exact dimensions of the screen. 6 items divided by 100% height is 16.667, so setting 
+            each item to 16.667dvh (16.667% of the view height) accomplishes this. Each panel, of course, links to it's corresponding page. 
+        </p>
+    </main>
+    <footer class="footer">
+        <button class="previous" aria-label="previous page"><a href="styling.html"><<</a></button>
+        <div class="pageNumContainer">
+            <span class="pageNum">1</span>
+            <span class="pageNum">2</span>
+            <span class="activePageNum">3</span>
+            <span class="pageNum">4</span>
+            <span class="pageNum">5</span>
+            <span class="pageNum">6</span>
+        </div>
+        <button class="next" aria-label="next page"><a href="WCAG.html">>></a></button>
+    </footer>
+</body>
+</html>

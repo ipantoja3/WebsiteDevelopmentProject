@@ -33,10 +33,16 @@ body{
     display:flex;
     top:0;
     margin: 0 0 0 16.667dvh;
-    width:calc(100%-16.667dvh);
-    font-size:14vh;
+    width: calc(100%-16.667dvh);
+    font-size:14dvh;
     color: var(--bg);
     font-family:Arial;
+}
+.logo{
+    position:absolute;
+    width:64px;
+    height:64px;
+    right:3dvw;
 }
 button{
     all:unset;

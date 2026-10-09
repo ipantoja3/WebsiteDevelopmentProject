@@ -13,7 +13,7 @@
     </button>
     <aside id="sidebar">
         <ul>
-            <li style="border-top:none;"><a href=index.html aria-label="home">Home</a></li>
+            <li style="border-top:none;"><a id="first" href=index.html aria-label="home">Home</a></li>
             <li><a href="styling.html" aria-label="styling">Styling</a></li>
             <li><a href="ui.html" aria-label="ui elements">UI Elements</a></li>
             <li><a href="WCAG.html" aria-label="wcag">WCAG</a></li>
@@ -21,16 +21,16 @@
             <li><a href="conclusion.html" aria-label="conclusion">Conclusion</a></li>
         </ul>
     </aside>
-    <header class="header" aria-label="home">
+    <header class="header" aria-label="styling">
         <title class="headerTitle">
             Styling
         </title>
     </header>
     <main>
-        <h1 aria-label="styling">Styling</h1>
+        <h1 aria-label="styling">Styling<a href="index.html"><image src="logo.png" class="logo"></image></a></h1>
         <h2 aria-label="paragraph 1 colors">Colors</h2>
         <p>
-            I chose a simple color scheme from <a href="colorhunt.co">colorhunt.co.</a> This is a free-to-use website featuring hundreds 
+            I chose a simple color scheme from <a href="https:\\www.colorhunt.co">colorhunt.co.</a> This is a free-to-use website featuring hundreds 
             of free use color palettes for websites. I made some minor modifications, such as removing a gold color that didn't fit 
             particularly well and adding a lighter "selected" color for the numbers below and screen reader selection. These colors are stored 
             in CSS variables to avoid having to type the hex code every time. The background color, #e8dcc4, is saved as "bg"; the selected color, 
@@ -58,7 +58,7 @@
         </p>
     </main role="main">
     <footer class="footer">
-        <button class="previous" aria-label="previous page"><<</button>
+        <button class="previous" aria-label="previous page"><a href="index.html"><<</a></button>
         <div class="pageNumContainer">
             <span class="pageNum">1</span>
             <span class="activePageNum">2</span>
@@ -67,7 +67,7 @@
             <span class="pageNum">5</span>
             <span class="pageNum">6</span>
         </div>
-        <button class="next" aria-label="next page">>></button>
+        <button class="next" aria-label="next page"><a href="ui.html">>></a></button>
     </footer>
 </body>
 </html>
