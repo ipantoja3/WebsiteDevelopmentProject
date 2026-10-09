@@ -363,7 +363,6 @@ function gameLoop(){
         if(xCollisionCheck(player,upgrade3)&&yCollisionCheck(player,upgrade3)){superDash=true; jumps=10000}
     })
     render();
-    console.log(player.x, player.y);
     requestAnimationFrame(gameLoop)
 }
 
