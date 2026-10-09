@@ -18,7 +18,9 @@ function mobile(){
         const header = document.querySelector('.headerTitle');
         header.style.fontSize='10dvh';
         const footer = document.querySelectorAll('.previous, .next, .pageNumContainer');
-        footer.style.fontSize='30cqh';
+        footer.forEach(element => {
+            element.style.fontSize='30cqh';
+        })
     }
 }
 
