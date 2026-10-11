@@ -10,7 +10,7 @@
 </head>
 <body>
     <button class="button" aria-label="toggle sidebar" id="toggleSidebar">
-        <p class="buttonIcon" aria-label="toggle sidebar">☰</p>
+        <span style="margin-bottom:9dvh;" class="buttonIcon">☰</span>
     </button>
     <aside id="sidebar">
         <ul>
@@ -23,12 +23,12 @@
         </ul>
     </aside>
     <header class="header" aria-label="WCAG">
-        <title class="headerTitle">
+        <span class="headerTitle">
             WCAG
-        </title>
+        </span>
     </header>
     <main>
-        <h1 aria-label="WCAG">WCAG<a href="index.html"><image src="logo.png" class="logo"></image></a></h1>
+        <h1 aria-label="WCAG">WCAG<a href="index.html"><img src="logo.png" class="logo" alt="website logo - links to homepage"></a></h1>
         <h2 aria-label="paragraph 1 color contrast">Color Contrast</h2>
         <p>
             WCAG (web content accessibility guidelines) is a set of standards used to judge the accessibility of a website. 
@@ -65,7 +65,7 @@
         </p>
     </main>
     <footer class="footer">
-        <button class="previous" aria-label="previous page"><a href="ui.html"><<</a></button>
+        <a class="previous" aria-label="previous page" href="ui.html">&lt;&lt;</a>
         <div class="pageNumContainer">
             <span class="pageNum">1</span>
             <span class="pageNum">2</span>
@@ -74,7 +74,7 @@
             <span class="pageNum">5</span>
             <span class="pageNum">6</span>
         </div>
-        <button class="next" aria-label="next page"><a href="mobile.html">>></a></button>
+        <a href="mobile.html" class="next" aria-label="next page">>></a>
     </footer>
 </body>
 </html>

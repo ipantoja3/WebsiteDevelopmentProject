@@ -10,7 +10,7 @@
 </head>
 <body>
     <button class="button" aria-label="toggle sidebar" id="toggleSidebar">
-        <p class="buttonIcon" aria-label="toggle sidebar">☰</p>
+        <span class="buttonIcon" style="margin-bottom:9dvh;">☰</span>
     </button>
     <aside id="sidebar">
         <ul>
@@ -23,12 +23,12 @@
         </ul>
     </aside>
     <header class="header" aria-label="mobile">
-        <title class="headerTitle">
+        <span class="headerTitle">
             Mobile
-        </title>
+        </span>
     </header>
     <main>
-        <h1 aria-label="Mobile">Mobile<a href="index.html"><image src="logo.png" class="logo"></image></a></h1>
+        <h1 aria-label="Mobile">Mobile<a href="index.html"><img src="logo.png" class="logo" alt="website logo - links to homepage"></a></h1>
         <h2 aria-label="paragraph 1 why mobile first">Why Mobile First</h2>
         <p>
             Mobile-first design is building and optimizing a site with mobile users at the forefront, and making any edits for desktop second. 
@@ -58,7 +58,7 @@
         <img src="mobileView.png" alt="a mobile view of the website">
     </main>
     <footer class="footer">
-        <button class="previous" aria-label="previous page"><a href="WCAG.html"><<</a></button>
+        <a class="previous" aria-label="previous page" href="WCAG.html">&lt;&lt;</a>
         <div class="pageNumContainer">
             <span class="pageNum">1</span>
             <span class="pageNum">2</span>
@@ -67,7 +67,7 @@
             <span class="activePageNum">5</span>
             <span class="pageNum">6</span>
         </div>
-        <button class="next" aria-label="next page"><a href="conclusion.html">>></a></button>
+        <a href="conclusion.html" class="next" aria-label="next page">>></a>
     </footer>
 </body>
 </html>

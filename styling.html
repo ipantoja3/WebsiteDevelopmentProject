@@ -10,7 +10,7 @@
 </head>
 <body>
     <button class="button" aria-label="toggle sidebar" id="toggleSidebar">
-        <p class="buttonIcon" aria-label="toggle sidebar">☰</p>
+        <span class="buttonIcon" style="margin-bottom:9dvh;">☰</span>
     </button>
     <aside id="sidebar">
         <ul>
@@ -23,12 +23,12 @@
         </ul>
     </aside>
     <header class="header" aria-label="styling">
-        <title class="headerTitle">
+        <span class="headerTitle">
             Styling
-        </title>
+        </span>
     </header>
     <main>
-        <h1 aria-label="styling">Styling<a href="index.html"><image src="logo.png" class="logo"></image></a></h1>
+        <h1 aria-label="styling">Styling<a href="index.html"><img src="logo.png" class="logo" alt="website logo - links to homepage"></a></h1>
         <h2 aria-label="paragraph 1 colors">Colors</h2>
         <p>
             I chose a simple color scheme from <a href="https://www.colorhunt.co">colorhunt.co.</a> This is a free-to-use website featuring hundreds 
@@ -57,9 +57,9 @@
             having to find a pixel amount for 10% of my screen that wouldn't work on other devices, I can use "10vh" and have it adapt automatically 
             to be 10% of the user's view height. 
         </p>
-    </main role="main">
+    </main>
     <footer class="footer">
-        <button class="previous" aria-label="previous page"><a href="index.html"><<</a></button>
+        <a class="previous" aria-label="previous page" href="index.html">&lt;&lt;</a>
         <div class="pageNumContainer">
             <span class="pageNum">1</span>
             <span class="activePageNum">2</span>
@@ -68,7 +68,7 @@
             <span class="pageNum">5</span>
             <span class="pageNum">6</span>
         </div>
-        <button class="next" aria-label="next page"><a href="ui.html">>></a></button>
+        <a class="next" aria-label="next page" href="ui.html">>></a>
     </footer>
 </body>
 </html>
