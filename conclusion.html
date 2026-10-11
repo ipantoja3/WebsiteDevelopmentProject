@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conclusion page.">
     <title>Conclusion</title>
     <link href="webdevprojectstyles.css" rel="stylesheet">
     <script src="webdevprojectscript.js" defer></script>
@@ -46,9 +47,18 @@
         <h2 aria-label="paragraph 3 miscellaneous">Miscellaneous</h2>
         <p>
             As mentioned above, I've been using JavaScript on my own time. This resulted in a small platformer game, which you can find linked 
-            <a href="https://ipantoja3.github.io/movement.html">here.</a> This isn't in the website navigation as it's not part of the website, but took too much effort 
+            <a href="https://ipantoja3.github.io/WebsiteDevelopmentProject/movement.html">here.</a> This isn't in the website navigation as it's not part of the website, but took too much effort 
             for me not to include (especially since Emmanuel asked me to include it). This page will not work on mobile (due to the absence of 
-            movement keys) and will not maintain the same look or feel of this website. The raw JavaScript can be downloaded <a href="movement.js" download="movement.js">here.</a>
+            movement keys) and will not maintain the same look or feel of this website. The raw JavaScript can be viewed <a href="movement.js" download="movement.js">here.</a>
+        </p>
+        <form id="form" aria-label="required form by rubric">
+            <label for="input">Required Form: </label>
+            <input type="text" id="input" name="input" required>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <p>
+            The rubric calls for a form of some sort, so here is a generic form. JavaScript prevents the default page reload on submit 
+            and instead console.logs the input. 
         </p>
     </main>
     <footer class="footer">

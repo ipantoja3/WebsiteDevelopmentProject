@@ -141,6 +141,8 @@ button a{
 }
 .activePageNum{
     color:var(--selected);
+    margin-left:1dvw;
+    margin-right:1dvw;
 }
 .previous:hover,.next:hover{
     background-color:var(--light);
@@ -205,4 +207,10 @@ img{
     max-width:100%;
     height:auto;
     align-self:center;
+}
+#submit{
+    text-decoration: underline;
+}
+#submit:hover, #submit:focus{
+    color:var(--selected);
 }

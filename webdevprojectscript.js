@@ -25,3 +25,10 @@ function mobile(){
 }
 
 mobile();
+
+const form = document.getElementById("form");
+const input = document.getElementById("input");
+form.addEventListener("click", (event) => {
+    event.preventDefault();
+    console.log(input.value);
+})
