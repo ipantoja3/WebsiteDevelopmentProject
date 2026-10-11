@@ -10,7 +10,7 @@
 </head>
 <body>
     <button class="button" aria-label="toggle sidebar" id="toggleSidebar">
-        <p class="buttonIcon" aria-label="toggle sidebar">☰</p>
+        <span style="margin-bottom:9dvh;" class="buttonIcon">☰</span>
     </button>
     <aside id="sidebar">
         <ul>
@@ -23,13 +23,13 @@
         </ul>
     </aside>
     <header class="header" aria-label="home">
-        <title class="headerTitle">
+        <span class="headerTitle">
             Home
-        </title>
+        </span>
     </header>
-    <main role="main">
-        <h1 aria-label="introduction">Introduction<a href="index.html"><image src="logo.png" class="logo" alt="website logo - links to homepage"></image></a></h1>
-        <h2 aria label="paragraph 1 purpose">Purpose</h2>
+    <main>
+        <h1 aria-label="introduction">Introduction<a href="index.html"><img src="logo.png" class="logo" alt="website logo - links to homepage"></a></h1>
+        <h2 aria-label="paragraph 1 purpose">Purpose</h2>
         <p>
             Hello, my name is Israel Pantoja, and this is my website about itself. The purpose of this website is to explain the accessibility and 
             UI design choices I've made as a result of my learning throughout this class. This website is for the Ivy Tech Community College 
@@ -39,7 +39,6 @@
                 <tr><td><a href="webdevprojectstyles.css">CSS</a></td></tr>
                 <tr><td><a href="webdevprojectscript.js">JavaScript</a></td></tr>
             </table>
-        </p>
         <h2 aria-label="paragraph 2 concept">Concept</h2>
         <p>
             Despite it's seeming simplicity, this concept took me quite awhile to come up with. I quite enjoyed the code aspect, but was 
@@ -57,7 +56,7 @@
         </p>
     </main>
     <footer class="footer">
-        <button class="previous" aria-label="previous page"><<</button>
+        <button class="previous" aria-label="previous page">&lt;&lt;</button>
         <div class="pageNumContainer">
             <span class="activePageNum">1</span>
             <span class="pageNum">2</span>
@@ -66,7 +65,7 @@
             <span class="pageNum">5</span>
             <span class="pageNum">6</span>
         </div>
-        <button class="next" aria-label="next page"><a href="styling.html">>></a></button>
+        <a class="next" aria-label="next page" href="styling.html">>></a>
     </footer>
 </body>
 </html>
